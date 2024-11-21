@@ -15,6 +15,9 @@ class AppColors {
   static const Color greyColor5 = Color(0xff535353);
   static const Color greyColor6 = Color(0xff7D7D7D);
   static const Color greyColor7 = Color(0xffA3A3A3);
+  static const Color dividerColor = Color(0xffA3A3A3);
+  static const Color redColor = Color(0xffc0392b);
+
 
   static const grayLinearGradiant = LinearGradient(colors :[lightGrey, greyColor7],
     begin: Alignment.topLeft,

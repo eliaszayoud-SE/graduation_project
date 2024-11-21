@@ -7,4 +7,11 @@ class OnboardingController extends GetxController {
   void goToLoginPage(){
     Get.offNamed(AppRoutes.login);
   }
+
+  @override
+  void onInit() {
+    // TODO: implement onInit
+    super.onInit();
+  }
+
 }

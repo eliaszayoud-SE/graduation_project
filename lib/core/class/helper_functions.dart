@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:graduation_project/core/class/status_request.dart';
 
+
 class HelperFunctions {
   static double getBottomNavigationBarHeight() {
     return kBottomNavigationBarHeight;
@@ -23,8 +24,6 @@ class HelperFunctions {
   static double screenWidth(){
     return MediaQuery.of(Get.context!).size.width;
   }
-
-
 
   static validInput(String value,  String? type){
 

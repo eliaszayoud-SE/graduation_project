@@ -2,13 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:graduation_project/view/authentication/onboarding/controller/onboarding_controller.dart';
-import '../../../../core/constant/app_colors.dart';
+import 'package:graduation_project/view/widget/logo/app_logo.dart';
 import '../../../../core/constant/app_image_asset.dart';
 import '../../../../core/constant/app_sizes.dart';
 import '../../../../core/constant/app_texts.dart';
 import '../../../../core/constant/styles.dart';
 import '../../../widget/gradiant/custom_gradient_button.dart';
-import '../../../widget/app_bar/custom_gradient_text.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -20,16 +19,7 @@ class OnboardingScreen extends StatelessWidget {
       body: Column(
         children: [
           SizedBox(height: (AppSizes.xl * 2).h,),
-          SizedBox(
-            width: 108.w,
-            height: 95.h,
-            child: Center(
-              child: CustomGradientText(
-                text: AppTexts.forYourHome,
-                style: Styles.style45.copyWith(color: AppColors.whiteColor),
-              ),
-            ),
-          ),
+          const AppLogo(),
           SizedBox(height: AppSizes.sm.h,),
           SizedBox(
             width: double.infinity,
@@ -37,10 +27,10 @@ class OnboardingScreen extends StatelessWidget {
             child: Image.asset(AppImageAsset.logo),
           ),
           const SizedBox(height: AppSizes.defaultSpace ,),
-          SizedBox(width: 219.w, height: 53.w, child: Text(AppTexts.enjoyYourMeal, style: Styles.style25,),),
-          SizedBox(width: 219.w, height: 34.h, child: Text(AppTexts.excellentDeliveryService, style: Styles.style16, textAlign: TextAlign.center,),),
+          SizedBox(width: 219.w, height: (AppSizes.lg * 2).w, child: Text(AppTexts.enjoyYourMeal, style: Styles.style25,),),
+          SizedBox(width: 219.w, height: AppSizes.xl.h, child: Text(AppTexts.excellentDeliveryService, style: Styles.style16, textAlign: TextAlign.center,),),
           SizedBox(
-            height: 56.h,
+            height: (AppSizes.lg * 2).w,
           ),
           Padding(
               padding: EdgeInsets.symmetric(horizontal: AppSizes.defaultSpace.w),

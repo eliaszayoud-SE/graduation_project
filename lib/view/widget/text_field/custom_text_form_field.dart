@@ -29,6 +29,7 @@ class CustomTextFormField extends StatelessWidget {
       onChanged: onChanged,
       maxLength: maxLength,
       decoration: InputDecoration(
+        counterText: '',
         prefixIcon: prefixIcon,
         hintText: hintText,
         hintStyle: Styles.style12.copyWith(color: AppColors.lightGrey),  // Customize hint style

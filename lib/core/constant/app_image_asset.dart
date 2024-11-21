@@ -6,4 +6,6 @@ class AppImageAsset {
   static const String logo = "$rootImages/logo.png";
 
   static const String checkIcon = "$rootIcons/check.svg";
+  static const String locationIcon = "$rootIcons/location.svg";
+
 }

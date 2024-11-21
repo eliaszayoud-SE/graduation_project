@@ -38,6 +38,11 @@ dependencies:
   flutter_svg: ^2.0.14
   skeletonizer: ^1.4.2
   iconsax: ^0.0.8
+  flutter_otp_text_field: ^1.1.0+2
+  google_maps_flutter: ^2.10.0
+  geolocator: ^13.0.2
+  geocoding: ^3.0.0
+  permission_handler: ^11.3.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       // Use builder only if you need to use library outside ScreenUtilInit context
       builder: (_, child) {
         return GetMaterialApp(
-          locale: Locale('ar'),
+          locale: const Locale('ar'),
           initialBinding: InitialBindings(),
           debugShowCheckedModeBanner: false,
           theme: appTheme,
